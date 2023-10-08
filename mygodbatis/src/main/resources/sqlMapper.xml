@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="CarMapper">
+    <insert id="insertCar">
+<!--        insert into t_car values(null,'8888','沃尔沃',30.0,'2000-11-11','燃油车')-->
+        insert into t_user(id,name) values(#{id},#{name})
+<!--        insert into t_user values('1','2'); -->
+    </insert>
+    <select id="selectById" resultType="org.god.ibatis.bean.User">
+        select *from t_user where id=#{id}
+    </select>
+</mapper>
